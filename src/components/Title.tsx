@@ -3,14 +3,14 @@ const Title = ({ title, sliceNum }: { title: string; sliceNum: number }) => {
 	const titleSlice2 = title.slice(sliceNum);
 
 	return (
-		<h1 className='text-white/50 drop-shadow-lg text-right text-8xl xl:text-[12rem] uppercase font-black xl:self-end leading-[5rem] xl:leading-[10rem]'>
+		<h1 className='text-white/25 drop-shadow-lg text-right text-8xl xl:text-[12rem] uppercase font-black xl:self-end leading-[5rem] xl:leading-[10rem]'>
 			{title.length < 5 ? (
 				title
 			) : (
 				<>
 					{titleSlice1}
 					<br />
-					<span className='text-[#F364B4]/50'>{titleSlice2}</span>
+					<span className='text-[#F364B4]/25'>{titleSlice2}</span>
 				</>
 			)}
 		</h1>
