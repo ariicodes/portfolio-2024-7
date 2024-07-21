@@ -48,7 +48,7 @@ const Nav = () => {
 					</motion.div>
 				</AnimatePresence>
 				<button
-					className='self-end mt-6 mr-9 text-[#00F7F4] block xl:hidden'
+					className='self-end my-3 mr-9 text-[#00F7F4] block xl:hidden'
 					onClick={handleToggle}
 				>
 					{isOpen ? 'close' : 'menu'}
