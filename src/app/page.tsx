@@ -1,8 +1,8 @@
 'use client';
 
 import { motion } from 'framer-motion';
-import Title from '@/components/Title';
 import Link from 'next/link';
+import Image from 'next/image';
 
 export default function Home() {
 	return (
@@ -24,14 +24,20 @@ export default function Home() {
 					Take a look at{' '}
 					<Link
 						href={'/projects'}
-						className='text-[#00F7F4]/80 font-medium uppercase'
+						className='text-[#00F7F4]/80 font-medium uppercase transition-colors ease-in delay-100 hover:text-[#00F7F4]'
 					>
 						my work
 					</Link>{' '}
 					to discover how I can contribute to your team!
 				</p>
 			</div>
-			<Title title={'ariicodes'} sliceNum={4} />
+			<Image
+				src='/secondary-logo-magenta.png'
+				width={500}
+				height={500}
+				alt='ariicodes logo in pink'
+				className='drop-shadow-lg xl:self-end'
+			/>
 		</motion.section>
 	);
 }
