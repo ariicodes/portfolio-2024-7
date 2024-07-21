@@ -21,7 +21,7 @@ export default function RootLayout({
 	return (
 		<html lang='en'>
 			<body
-				className={`bg-gray-950 text-[#FFFFF7] flex flex-col xl:flex-row w-screen h-dvh ${poppins.className}`}
+				className={`bg-gray-950 text-[#FFFFF7] flex flex-col xl:flex-row w-screen h-dvh z-0 relative ${poppins.className}`}
 			>
 				<Nav />
 				{children}
