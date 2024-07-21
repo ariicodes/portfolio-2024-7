@@ -24,16 +24,24 @@ const Nav = () => {
 						{isOpen && (
 							<ul className='flex flex-col divide-y-[.5px] divide-white/25 *:py-6 *:ml-8 border-b-4 border-[#F364B4]/25 xl:border-0 xl:hidden'>
 								<li>
-									<Link href='/'>Home</Link>
+									<Link href='/' onClick={handleToggle}>
+										Home
+									</Link>
 								</li>
 								<li>
-									<Link href='/about'>About</Link>
+									<Link href='/about' onClick={handleToggle}>
+										About
+									</Link>
 								</li>
 								<li>
-									<Link href='/projects'>Projects</Link>
+									<Link href='/projects' onClick={handleToggle}>
+										Projects
+									</Link>
 								</li>
 								<li>
-									<Link href='/contact'>Contact</Link>
+									<Link href='/contact' onClick={handleToggle}>
+										Contact
+									</Link>
 								</li>
 							</ul>
 						)}
