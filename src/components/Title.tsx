@@ -1,16 +1,16 @@
-const Title = ({ title, sliceNum }: { title: string; sliceNum: number }) => {
+const Title = ({ title, sliceNum }: { title: string; sliceNum?: number }) => {
 	const titleSlice1 = title.slice(0, sliceNum);
 	const titleSlice2 = title.slice(sliceNum);
 
 	return (
-		<h1 className='text-white/25 drop-shadow-lg text-right text-8xl xl:text-[12rem] uppercase font-black xl:self-end leading-[5rem] xl:leading-[10rem]'>
-			{title.length < 5 ? (
+		<h1 className='bg-gray-950 w-screen xl:w-10/12 z-20 fixed right-0 bottom-0 text-[#F364B4] text-right text-8xl xl:text-[12rem] uppercase font-black xl:self-end leading-[5rem] xl:leading-[10rem] p-6'>
+			{title.length <= 5 ? (
 				title
 			) : (
 				<>
-					{titleSlice1}
+					<span className='text-white'>{titleSlice1}</span>
 					<br />
-					<span className='text-[#F364B4]/25'>{titleSlice2}</span>
+					{titleSlice2}
 				</>
 			)}
 		</h1>
