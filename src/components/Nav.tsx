@@ -14,7 +14,7 @@ const Nav = () => {
 	return (
 		<nav className='justify-self-start uppercase xl:h-screen xl:w-2/12 xl:border-r-4 border-[#F364B4]/25 xl:pt-12 flex flex-col'>
 			{/* FOR SMALLER SCREENS BELOW */}
-			<div className='flex flex-col xl:hidden z-10 absolute w-screen bg-gray-950'>
+			<div className='flex flex-col xl:hidden z-10 fixed w-screen bg-gray-950'>
 				<AnimatePresence>
 					<motion.div
 						initial={{ opacity: 0, y: -100 }}
@@ -48,7 +48,7 @@ const Nav = () => {
 					</motion.div>
 				</AnimatePresence>
 				<button
-					className='self-end my-3 mr-9 text-[#00F7F4] block xl:hidden'
+					className='self-end my-5 mr-9 text-[#00F7F4] block xl:hidden'
 					onClick={handleToggle}
 				>
 					{isOpen ? 'close' : 'menu'}
