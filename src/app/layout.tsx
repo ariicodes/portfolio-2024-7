@@ -24,7 +24,7 @@ export default function RootLayout({
 				className={`bg-gray-950 text-[#FFFFF7] flex flex-col xl:flex-row w-screen h-dvh z-0 relative ${poppins.className}`}
 			>
 				<Nav />
-				<div className='pt-6'>{children}</div>
+				{children}
 			</body>
 		</html>
 	);
