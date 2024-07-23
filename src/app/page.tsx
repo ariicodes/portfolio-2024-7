@@ -9,8 +9,8 @@ export default function Home() {
 		<motion.section
 			initial={{ opacity: 0 }}
 			animate={{ opacity: 1 }}
-			transition={{ duration: 2 }}
-			className='flex flex-col justify-between gap-5 h-dvh w-dvw p-12'
+			transition={{ duration: 3 }}
+			className='flex flex-col justify-between gap-5 h-dvh w-dvw xl:ml-12 p-12 mt-4'
 		>
 			<div>
 				<p className='text-xl xl:text-4xl font-extralight tracking-wide xl:w-2/3'>
@@ -37,6 +37,7 @@ export default function Home() {
 				height={500}
 				alt='ariicodes logo in pink'
 				className='drop-shadow-lg xl:self-end'
+				priority
 			/>
 		</motion.section>
 	);
