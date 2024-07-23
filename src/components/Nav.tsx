@@ -12,7 +12,7 @@ const Nav = () => {
 	};
 
 	return (
-		<nav className='justify-self-start uppercase xl:h-screen xl:w-2/12 xl:border-r-4 border-[#F364B4]/25 xl:pt-12 flex flex-col'>
+		<nav className='justify-self-start uppercase xl:w-2/12 border-[#F364B4]/25 flex flex-col'>
 			{/* FOR SMALLER SCREENS BELOW */}
 			<div className='flex flex-col xl:hidden z-10 fixed w-screen bg-gray-950'>
 				<AnimatePresence>
@@ -55,20 +55,22 @@ const Nav = () => {
 				</button>
 			</div>
 			{/* FOR LARGER SCREENS BELOW */}
-			<ul className='xl:flex flex-col divide-y-[.5px] divide-white/25 *:py-6 *:ml-8 border-b-4 border-[#F364B4]/25 xl:border-0 hidden'>
-				<li>
-					<Link href='/'>Home</Link>
-				</li>
-				<li>
-					<Link href='/about'>About</Link>
-				</li>
-				<li>
-					<Link href='/projects'>Projects</Link>
-				</li>
-				<li>
-					<Link href='/contact'>Contact</Link>
-				</li>
-			</ul>
+			<div className='fixed h-screen xl:border-r-4 xl:w-2/12 border-[#F364B4]/25'>
+				<ul className='xl:flex flex-col divide-y-[.5px] divide-white/25 *:py-6 *:ml-8 border-b-4 xl:border-0 hidden'>
+					<li>
+						<Link href='/'>Home</Link>
+					</li>
+					<li>
+						<Link href='/about'>About</Link>
+					</li>
+					<li>
+						<Link href='/projects'>Projects</Link>
+					</li>
+					<li>
+						<Link href='/contact'>Contact</Link>
+					</li>
+				</ul>
+			</div>
 		</nav>
 	);
 };
