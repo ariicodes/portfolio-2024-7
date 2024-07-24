@@ -15,10 +15,10 @@ export default function Home() {
 			<div>
 				<p className='text-xl xl:text-4xl font-extralight tracking-wide xl:w-2/3'>
 					<span className='uppercase font-bold text-[#CFAFE7]/75 text-4xl xl:text-8xl'>
-						Hey I'm Ariela!
+						Hey I&apos;m Ariela!
 					</span>
 					<br />
-					I'm a software engineer who specializes in creating innovative,
+					I&apos;m a software engineer who specializes in creating innovative,
 					user-friendly applications.
 					<br />
 					Take a look at{' '}
