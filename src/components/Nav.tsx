@@ -23,26 +23,18 @@ const Nav = () => {
 					>
 						{isOpen && (
 							<ul className='flex flex-col divide-y-[.5px] divide-white/25 *:py-6 *:ml-8 border-b-4 border-[#F364B4]/25 xl:border-0 xl:hidden'>
-								<li>
-									<Link href='/' onClick={handleToggle}>
-										Home
-									</Link>
-								</li>
-								<li>
-									<Link href='/about' onClick={handleToggle}>
-										About
-									</Link>
-								</li>
-								<li>
-									<Link href='/projects' onClick={handleToggle}>
-										Projects
-									</Link>
-								</li>
-								<li>
-									<Link href='/contact' onClick={handleToggle}>
-										Contact
-									</Link>
-								</li>
+								<Link href='/' onClick={handleToggle}>
+									<li>Home</li>
+								</Link>
+								<Link href='/about' onClick={handleToggle}>
+									<li>About</li>
+								</Link>
+								<Link href='/projects' onClick={handleToggle}>
+									<li>Projects</li>
+								</Link>
+								<Link href='/contact' onClick={handleToggle}>
+									<li>Contact</li>
+								</Link>
 							</ul>
 						)}
 					</motion.div>
@@ -57,18 +49,18 @@ const Nav = () => {
 			{/* FOR LARGER SCREENS BELOW */}
 			<div className='fixed h-screen xl:border-r-4 xl:w-2/12 border-[#F364B4]/25'>
 				<ul className='xl:flex flex-col divide-y-[.5px] divide-white/25 *:py-6 *:ml-8 border-b-4 xl:border-0 hidden'>
-					<li>
-						<Link href='/'>Home</Link>
-					</li>
-					<li>
-						<Link href='/about'>About</Link>
-					</li>
-					<li>
-						<Link href='/projects'>Projects</Link>
-					</li>
-					<li>
-						<Link href='/contact'>Contact</Link>
-					</li>
+					<Link href='/'>
+						<li>Home</li>
+					</Link>
+					<Link href='/about'>
+						<li>About</li>
+					</Link>
+					<Link href='/projects'>
+						<li>Projects</li>
+					</Link>
+					<Link href='/contact'>
+						<li>Contact</li>
+					</Link>
 				</ul>
 			</div>
 		</nav>
