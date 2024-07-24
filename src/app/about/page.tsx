@@ -36,7 +36,15 @@ export default function About() {
 						{' '}
 						I am ready to contribute my unique blend of technical expertise and
 						creative flair to your team. If you’re looking for a versatile and
-						innovative software engineer dedicated to excellence,{' '}
+						innovative software engineer dedicated to excellence, view my resume{' '}
+						<Link
+							href={'/ariela_israel_main_6_2024_1.pdf'}
+							target='_blank'
+							className='text-[#00F7F4]/80 font-medium transition-colors ease-in delay-100 hover:text-[#00F7F4]'
+						>
+							here
+						</Link>{' '}
+						and{' '}
 						<Link
 							href={'contact'}
 							className='text-[#00F7F4]/80 font-medium transition-colors ease-in delay-100 hover:text-[#00F7F4]'
