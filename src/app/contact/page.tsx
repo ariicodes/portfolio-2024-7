@@ -11,7 +11,7 @@ export default function Contact() {
 			transition={{ duration: 3 }}
 			className='flex flex-col justify-between gap-5 h-dvh w-dvw xl:ml-12 mt-4 xl:mt-0 p-12'
 		>
-			<div>
+			<div className='pb-48 xl:pb-56'>
 				<form
 					action='https://formspree.io/f/mzbwgkwj'
 					method='POST'
