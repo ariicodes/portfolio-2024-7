@@ -32,7 +32,7 @@ const projects = [
 		],
 		github:
 			'https://github.com/ariicodes/periodic-tables-restaurant-reservation',
-		live: 'https://periodic-tables-79m6.onrender.com/',
+		live: 'https://periodic-tables.ariicodes.com',
 	},
 	{
 		title: 'Decoder Ring',
