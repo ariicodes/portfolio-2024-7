@@ -14,7 +14,7 @@ export default function About() {
 			transition={{ duration: 3 }}
 			className='flex flex-col justify-between gap-5 h-dvh w-dvw xl:ml-12 mt-4 xl:mt-0 p-12'
 		>
-			<div className='pb-36 xl:pb-56'>
+			<div className='pb-28 xl:pb-56'>
 				<div className='text-md xl:text-2xl font-light leading-5'>
 					<p>
 						I am a Thinkful/Chegg Skills Software Engineering alumna with a
