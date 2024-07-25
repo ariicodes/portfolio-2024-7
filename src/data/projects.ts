@@ -58,8 +58,8 @@ const projects = [
 			'MongoDB',
 			'Stripe API',
 		],
-		github: '',
-		live: '',
+		github: 'https://github.com/ariicodes/bloom-n-balance',
+		live: 'https://bloom-n-balance.vercel.app/',
 	},
 	{
 		title: 'Jeopardy Inspired Game',
